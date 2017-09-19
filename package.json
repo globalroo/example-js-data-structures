@@ -1,7 +1,7 @@
 {
-  "name": "bubble-sort",
+  "name": "example-js-data-structures",
   "version": "0.0.1",
-  "description": "Example JS basic data structures.",
+  "description": "Example JS data structures.",
   "main": "src/bubble-sort.js",
   "scripts": {
     "clean": "rimraf coverage",
