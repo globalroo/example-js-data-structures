@@ -1,0 +1,13 @@
+# data-structures-101 [![Build Status](https://travis-ci.org/globalroo/data-structures-101.svg?branch=master)](https://travis-ci.org/globalroo/data-structures-101)[![codecov](https://codecov.io/gh/globalroo/data-structures-101/branch/master/graph/badge.svg)](https://codecov.io/gh/globalroo/data-structures-101)
+
+> Example JS data structures
+
+```sh
+npm install yarn -g
+yarn
+yarn test
+```
+## Brief description
+
+- Bubble Sort 101
+- Randomise Array

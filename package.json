@@ -1,0 +1,19 @@
+{
+  "name": "bubble-sort",
+  "version": "0.0.1",
+  "description": "Example JS basic data structures.",
+  "main": "src/bubble-sort.js",
+  "scripts": {
+    "clean": "rimraf coverage",
+    "lint": "eslint src/**/*.js",
+    "package": "yarn run clean && rimraf node_modules",
+    "test": "jest --config jest.config.json && codecov"
+  },
+  "author": "Andrew Davies <globalroo@hotmail.com> (http://github.com/globalroo)",
+  "license": "MIT",
+  "devDependencies": {
+    "codecov": "^2.3.0",
+    "jest": "^21.1.0",
+    "jest-cli": "^21.1.0"
+  }
+}
