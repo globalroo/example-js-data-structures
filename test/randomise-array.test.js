@@ -1,4 +1,4 @@
-const { randomiseArray } = require("../src/randomise-array");
+const { randomiseArray } = require("src/randomise-array");
 
 const testArray = [10,9,8,7,6,5,4,3,2,1];
 
