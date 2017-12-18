@@ -10,6 +10,6 @@ yarn test
 ## Brief description
 
 - Bubble Sort
+- Quick Sort
 - Randomise Array
 - Binary Search
-

@@ -19,7 +19,12 @@ const nonRecursiveBinarySearch = (array, item) => {
 	return result;
 };
 
-const recursiveTernaryBinarySearch = (array, item, start = 0, end = array.length - 1) => {
+const recursiveTernaryBinarySearch = (
+	array,
+	item,
+	start = 0,
+	end = array.length - 1
+) => {
 	if (start > end) {
 		return -1;
 	}
@@ -31,7 +36,12 @@ const recursiveTernaryBinarySearch = (array, item, start = 0, end = array.length
 			: recursiveTernaryBinarySearch(array, item, middle + 1, end);
 };
 
-const recursiveBinarySearch = (array, item, start = 0, end = array.length - 1) => {
+const recursiveBinarySearch = (
+	array,
+	item,
+	start = 0,
+	end = array.length - 1
+) => {
 	let result = -1;
 	if (start <= end) {
 		const middle = Math.floor((start + end) / 2);
@@ -46,7 +56,12 @@ const recursiveBinarySearch = (array, item, start = 0, end = array.length - 1) =
 	return result;
 };
 
-const recursiveBinarySearchWithAbruptReturn = (array, item, start = 0, end = array.length - 1) => {
+const recursiveBinarySearchWithAbruptReturn = (
+	array,
+	item,
+	start = 0,
+	end = array.length - 1
+) => {
 	if (start > end) {
 		return -1;
 	}
@@ -55,7 +70,12 @@ const recursiveBinarySearchWithAbruptReturn = (array, item, start = 0, end = arr
 		return middle;
 	}
 	if (item < array[middle]) {
-		return recursiveBinarySearchWithAbruptReturn(array, item, start, middle - 1);
+		return recursiveBinarySearchWithAbruptReturn(
+			array,
+			item,
+			start,
+			middle - 1
+		);
 	}
 	return recursiveBinarySearchWithAbruptReturn(array, item, middle + 1, end);
 };
