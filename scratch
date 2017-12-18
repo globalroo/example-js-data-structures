@@ -1,0 +1,46 @@
+// // var sortmeA = [7, 4, 9, 3, 1, 10, 8];
+// var sortmeB = [7, 4, 9, 3, 1, 10, 8];
+// // console.log("sortme.sort()");
+// // console.log(sortmeA.sort((a, b) => a > b));
+
+// const swap = (array, itemA, itemB) => {
+// 	const buffer = array[itemB];
+// 	array[itemB] = array[itemA];
+// 	array[itemA] = buffer;
+// };
+
+// const partitionArray = (array, start, end) => {
+// 	const pivot = array[end];
+// 	let partitionIndex = 0;
+// 	for (let i = 0; i < end; i++) {
+// 		if (array[i] <= pivot) {
+// 			if (partitionIndex !== i) {
+// 				swap(array, partitionIndex, i);
+// 			}
+// 			partitionIndex++;
+// 		}
+// 	}
+// 	swap(array, end, partitionIndex);
+// 	return partitionIndex;
+// };
+
+// const quickSort = (array, start, end) => {
+// 	if (start < end) {
+// 		let partitionIndex = partitionArray(array, start, end);
+// 		quickSort(array, start, partitionIndex - 1);
+// 		quickSort(array, partitionIndex, end);
+// 	}
+// 	return array;
+// };
+
+// console.log("partition");
+// console.log(quickSort(sortmeB, 0, sortmeB.length - 1));
+
+//TODO - median selection of random numbers from array for best pivot
+// i.e. non end of array pivot
+
+// eslint-disable-next-line
+console.time("quickSortPivotAtEnd");
+
+// eslint-disable-next-line
+console.timeEnd("quickSortPivotAtEnd");

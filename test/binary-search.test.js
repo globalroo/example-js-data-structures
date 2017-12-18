@@ -3,25 +3,26 @@ const {
 	recursiveBinarySearch,
 	recursiveTernaryBinarySearch,
 	recursiveBinarySearchWithAbruptReturn
-} = require ("src/binary-search");
+} = require("src/binary-search");
 
-const testArray = [1,2,3,4,5,6,7,8,9,10];
+const testArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
 const testSearchFunctions = [
 	{
 		name: "recursiveTernaryBinarySearch",
-		binarySearch: recursiveTernaryBinarySearch,
+		binarySearch: recursiveTernaryBinarySearch
 	},
 	{
 		name: "recursiveBinarySearch",
-		binarySearch: recursiveBinarySearch,
+		binarySearch: recursiveBinarySearch
 	},
 	{
 		name: "nonRecursiveBinarySearch",
-		binarySearch: nonRecursiveBinarySearch,
+		binarySearch: nonRecursiveBinarySearch
 	},
 	{
 		name: "recursiveBinarySearchWithAbruptReturn",
-		binarySearch: recursiveBinarySearchWithAbruptReturn,
+		binarySearch: recursiveBinarySearchWithAbruptReturn
 	}
 ];
 
