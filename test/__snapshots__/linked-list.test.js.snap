@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Prints the list Returns a stringified version of the list 1`] = `
+"[0] \\"One\\"
+[1] \\"Two\\"
+[2] \\"Three\\"
+[HEAD] \\"One\\"
+[TAIL] \\"Three\\"
+"
+`;

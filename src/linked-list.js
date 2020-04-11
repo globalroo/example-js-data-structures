@@ -4,7 +4,7 @@ const createNode = (value) => ({
 	prev: null
 });
 
-const createLinkedList = () => ({
+const createCircularList = () => ({
 	head: null,
 	count: 0,
 	tail: null,
@@ -31,18 +31,11 @@ const createLinkedList = () => ({
 	},
 
 	pop() {
-		if (this.isEmpty) return;
-
-		const node = this.tail;
-		this.tail = this.tail.prev;
-		this.tail.next = this.head;
-		this.head.prev = this.tail;
-
-		this.count -= 1;
-		return node;
+		return this.delete(this.count - 1);
 	},
 
 	get(index) {
+		if (this.isEmpty) return;
 		if (index < 0 || index > this.count - 1) return;
 		if (index === 0) return this.head;
 		if (index === this.count - 1) return this.tail;
@@ -58,6 +51,12 @@ const createLinkedList = () => ({
 		if (!node) return;
 
 		this.count -= 1;
+
+		if (this.isEmpty) {
+			this.head = null;
+			this.tail = null;
+			return node;
+		}
 
 		if (node === this.head) {
 			this.head = this.head.next;
@@ -82,17 +81,27 @@ const createLinkedList = () => ({
 	get isEmpty() {
 		return this.count === 0;
 	},
-
-	print() {
+	toArray() {
+		const listArray = [];
 		let current = this.head;
 		for (i = 0; i < this.count; i++) {
-			console.log({ current });
+			listArray.push(current.value);
 			current = current.next;
 		}
-		console.log({ current: this.current });
-		console.log({ head: this.head });
-		console.log({ tail: this.tail });
+		return listArray;
+	},
+	print() {
+		let beautify = "";
+		let current = this.head;
+		for (i = 0; i < this.count; i++) {
+			beautify += `[${i}] ${JSON.stringify(current.value)}\r\n`;
+			current = current.next;
+		}
+		beautify += `[HEAD] ${JSON.stringify(this.head.value)}\r\n`;
+		beautify += `[TAIL] ${JSON.stringify(this.tail.value)}\r\n`;
+
+		return beautify;
 	}
 });
 
-module.exports = { createLinkedList };
+module.exports = { createLinkedList: createCircularList };
