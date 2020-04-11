@@ -81,6 +81,7 @@ const createCircularList = () => ({
 	get isEmpty() {
 		return this.count === 0;
 	},
+
 	toArray() {
 		const listArray = [];
 		let current = this.head;
@@ -90,6 +91,7 @@ const createCircularList = () => ({
 		}
 		return listArray;
 	},
+
 	print() {
 		let beautify = "";
 		let current = this.head;
