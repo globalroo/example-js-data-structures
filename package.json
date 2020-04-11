@@ -4,21 +4,21 @@
   "description": "Example JS data structures.",
   "main": "src/bubble-sort.js",
   "scripts": {
-	"clean": "rimraf coverage",
-	"prettier": "prettier --config .prettierrc --write 'src/**/*' 'test/**/*' && eslint --fix 'src/**/*' 'test/**/*'",
+    "clean": "rimraf coverage",
+    "prettier": "prettier --config .prettierrc --write 'src/**/*' 'test/**/*' && eslint --fix 'src/**/*' 'test/**/*'",
     "lint": "eslint src/**/*.js",
     "package": "yarn run clean && rimraf node_modules",
-    "test": "jest --config jest.config.json -w",
+    "test": "jest --config jest.config.json --watch",
     "testcov": "jest --config jest.config.json && codecov"
   },
   "author": "Andrew Davies <globalroo@hotmail.com> (http://github.com/globalroo)",
   "license": "MIT",
   "devDependencies": {
-    "codecov": "^2.3.0",
-    "jest": "^21.1.0",
-    "jest-cli": "^21.1.0"
+    "codecov": "^3.6.5",
+    "jest": "^25.3.0",
+    "jest-cli": "^25.3.0"
   },
   "dependencies": {
-    "prettier": "1.9.2"
+    "prettier": "2.0.4"
   }
 }

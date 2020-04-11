@@ -6,10 +6,10 @@
 	"moduleFileExtensions": [
 		"js"
 	],
-	"testRegex": "/test/.*\\.test\\.(js)$",
+	"testRegex": "/test/.*\\.test\\.js$",
 	"collectCoverage": true,
 	"collectCoverageFrom": [
-		"src/**/*.{js}"
+		"**/*.js"
 	],
 	"coverageDirectory": "<rootDir>/coverage"
 }
