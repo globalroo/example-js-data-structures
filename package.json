@@ -14,7 +14,7 @@
   "author": "Andrew Davies <globalroo@hotmail.com> (http://github.com/globalroo)",
   "license": "MIT",
   "devDependencies": {
-    "codecov": "^3.6.5",
+    "codecov": "^3.7.1",
     "jest": "^25.3.0",
     "jest-cli": "^25.3.0"
   },
