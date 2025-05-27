@@ -12,5 +12,6 @@ yarn test
 - Binary Search
 - Bubble Sort
 - Circular Linked List
+- Merge Sort: A divide-and-conquer algorithm for sorting. It has a time complexity of O(n log n) and a space complexity of O(n).
 - Quick Sort
 - Randomise Array
